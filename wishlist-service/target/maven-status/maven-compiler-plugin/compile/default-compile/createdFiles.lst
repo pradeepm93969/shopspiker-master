@@ -1,0 +1,11 @@
+com\shopspiker\wishlist\modal\WishListModal.class
+com\shopspiker\wishlist\service\provider\CatalogBrowseServiceProvider.class
+com\shopspiker\wishlist\modal\mapper\WishListMapper.class
+com\shopspiker\wishlist\service\impl\WishListServiceImpl.class
+com\shopspiker\wishlist\service\WishListService.class
+com\shopspiker\wishlist\configuration\WishListConfig.class
+com\shopspiker\wishlist\jpa\repository\WishListRepository.class
+com\shopspiker\wishlist\modal\WishListModal$WishListModalBuilder.class
+com\shopspiker\wishlist\web\controller\WishListController.class
+com\shopspiker\wishlist\jpa\entity\WishList.class
+com\shopspiker\wishlist\modal\mapper\WishListMapperImpl.class

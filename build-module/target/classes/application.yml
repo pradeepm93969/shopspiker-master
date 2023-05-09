@@ -1,0 +1,74 @@
+server:
+  port: 8090
+  error:
+    include-stacktrace: never
+
+spring:
+  application:
+    name: SHOPSPIKER
+  redis:
+    connect-timeout: 3s
+    host: localhost
+    port: 6379
+    timeout: 2s
+    database: 0
+  cache:
+    type: redis
+    redis:
+      cache-null-values: false
+      time-to-live: "10m"
+      use-key-prefix: true
+      key-prefix: "SWL"
+  datasource:
+    url: jdbc:mysql://localhost:3306/shopspiker?createDatabaseIfNotExist=true&enabledTLSProtocols=TLSv1.2
+    username: admin
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      pool-name: SHOPSPIKER
+      maximum-pool-size: 25
+      minimum-idle: 5
+      max-lifetime: 1800000
+      idle-timeout: 600000
+      connection-timeout: 60000
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+  level:
+    org:
+      springframework:
+        security: INFO
+        web: INFO
+
+
+springdoc:
+  swagger-ui:
+    tagsSorter: alpha
+    operationsSorter: alpha
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+db:
+  init:
+    data: true
+
+
+
+

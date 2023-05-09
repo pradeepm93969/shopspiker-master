@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-ops-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-ops-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/catalog-browse-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/catalog-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/catalog-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/content-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/content-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customer-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/import-export-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/import-export-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pricing-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pricing-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scheduled-job-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scheduled-job-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/search-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/search-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/site-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/site-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wishlist-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wishlist-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

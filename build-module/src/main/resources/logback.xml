@@ -1,0 +1,65 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<configuration>
+
+    <property name="LOGS" value="./logs"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] %blue([%t]) %yellow([%-5p]) %green(%C.%M[]) - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- <logger name="org.springframework.web" level="DEBUG" /> -->
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOGS}/application.log</File>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] [%t] [%-5p] %C.%M[] - %m%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGS}/archived/application-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <!-- <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+         <destination>localhost:5000</destination>
+         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+             <providers>
+                 <mdc />
+                 <context />
+                 <logLevel />
+                 <loggerName />
+                    <pattern>
+                        <pattern>
+                        {
+                              "app": "auth-service"
+                        }
+                    </pattern>
+                 </pattern>
+                 <threadName />
+                 <message />
+                 <logstashMarkers />
+                 <arguments>
+                     <includeNonStructuredArguments>false</includeNonStructuredArguments>
+                     <nonStructuredArgumentsFieldPrefix>arg</nonStructuredArgumentsFieldPrefix>
+                 </arguments>
+                 <stackTrace />
+             </providers>
+         </encoder>
+     </appender>-->
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+        <!--<appender-ref ref = "logstash" />-->
+    </root>
+
+    <logger name="com.app" level="trace" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+        <!--<appender-ref ref = "logstash" />-->
+    </logger>
+</configuration>

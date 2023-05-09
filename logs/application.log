@@ -1,0 +1,4 @@
+[2023-02-23 00:58:41,042] [SHOPSPIKER housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.run[] - SHOPSPIKER - Thread starvation or clock leap detected (housekeeper delta=10m34s205ms943µs400ns).
+[2023-02-23 01:33:52,096] [SpringApplicationShutdownHook] [INFO ] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy[] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-23 01:33:52,136] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource.close[] - SHOPSPIKER - Shutdown initiated...
+[2023-02-23 01:33:52,142] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource.close[] - SHOPSPIKER - Shutdown completed.

@@ -1,0 +1,5 @@
+SET SQL_MODE = '';
+
+create database shopspiker;
+create user admin identified by 'password';
+grant all on shopspiker.* to admin;

@@ -1,0 +1,3 @@
+com\shopspiker\catalogbrowse\modal\ProductQuickViewModal.class
+com\shopspiker\catalogbrowse\service\CatalogBrowseService.class
+com\shopspiker\catalogbrowse\service\impl\CatalogBrowseServiceImpl.class

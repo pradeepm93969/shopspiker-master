@@ -1,0 +1,20 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.shopspiker</groupId>
+        <artifactId>shopspiker</artifactId>
+        <version>${shopspiker.version}</version>
+    </parent>
+
+    <artifactId>common-module</artifactId>
+    <version>${shopspiker.version}</version>
+    <packaging>jar</packaging>
+    <name>common-module</name>
+    <url>http://www.shopspiker.com</url>
+
+    <dependencies>
+
+    </dependencies>
+
+</project>
